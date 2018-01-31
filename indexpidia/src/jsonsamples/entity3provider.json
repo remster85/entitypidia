@@ -1,0 +1,25 @@
+[
+        { 
+            "entity" : "entity3",
+            "provider" : "PROV1",
+            "value" : "valeur1"
+            
+        },
+        { 
+            "entity" : "entity3",
+            "provider" : "PROV2",
+            "value" : "valeur2"
+            
+        },
+        { 
+            "entity" : "entity3",
+            "provider" : "PROV3",
+            "value" : "valeur3"
+            
+        },{
+
+            "entity" : "entity3",
+            "provider" : "PROV4",
+            "value" : "valeur4"
+            
+        }]

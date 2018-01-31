@@ -1,0 +1,12 @@
+[
+        { 
+            "property1" : "value1",
+            "property2" : "value2",
+            "property3" : "value3",
+            "property4" : 0.002,
+            "property5" : 150,
+            "property6" : null,
+            "property7" : 0.00009,
+            "property8" : "value8"
+        }
+]

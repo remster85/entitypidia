@@ -1,0 +1,53 @@
+[
+        { 
+            "property1" : "value1",
+            "property2" : "value2",
+            "property3" : "value3",
+            "property4" : 0.002,
+            "property5" : 150,
+            "property6" : null,
+            "property7" : 0.00009,
+            "property8" : "value8"
+        },
+        { 
+            "property1" : "va1",
+            "property2" : "val2",
+            "property3" : "val3",
+            "property4" : 0.012,
+            "property5" : 17,
+            "property6" : null,
+            "property7" : 0.0109,
+            "property8" : "val8"
+        },
+        { 
+            "property1" : "value1",
+            "property2" : "value2",
+            "property3" : "value3",
+            "property4" : 0.002,
+            "property5" : 150,
+            "property6" : null,
+            "property7" : 0.00009,
+            "property8" : "value8"
+        },
+        { 
+            "property1" : "valeur1",
+            "property2" : "valeur2",
+            "property3" : "valeur3",
+            "property4" : 0.021,
+            "property5" : 1001,
+            "property6" : "dummy",
+            "property7" : 0.00009,
+            "property8" : "value8"
+        },
+        { 
+            "property1" : "value1",
+            "property2" : "value2",
+            "property3" : "value3",
+            "property4" : 0.004,
+            "property5" : 156,
+            "property6" : null,
+            "property7" : 0.039,
+            "property8" : "value8"
+        }
+
+]
