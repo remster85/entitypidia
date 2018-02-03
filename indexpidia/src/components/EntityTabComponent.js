@@ -5,6 +5,7 @@ import Provider from './Provider.js';
 import EntityComposition from './EntityComposition.js';
 import PieChart from './PieChart.js';
 import LineExample from './LineExample.js'; 
+import OperationsComponent from './OperationsComponent.js'; 
 
 export default class EntityTabComponent extends React.Component {
   constructor(props) {
@@ -53,6 +54,14 @@ export default class EntityTabComponent extends React.Component {
                 Referential
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: this.state.activeTab === '4' })}
+                onClick={() => { this.toggle('4'); }}
+              >
+                Deals
+              </NavLink>
+            </NavItem>
           </Nav>
           <TabContent activeTab={this.state.activeTab}>
             <TabPane tabId="1">
@@ -61,7 +70,7 @@ export default class EntityTabComponent extends React.Component {
               </Row>
 
               <Row>
-                <Col sm="6">
+                <Col sm="8">
                       <EntityComposition entityname={this.props.entityname}/>
                 </Col>
 
@@ -107,6 +116,22 @@ export default class EntityTabComponent extends React.Component {
                       entityname={this.props.entityname}/>
                   </Card>
                 </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="4">
+              <Row>
+                  <br/>
+              </Row>
+
+              <Row>
+                <Col sm="6">
+                <OperationsComponent  entityname={this.props.entityname} />
+                </Col>
+
+                <Col sm="4">
+                ...
+                </Col>
+
               </Row>
             </TabPane>
           </TabContent>

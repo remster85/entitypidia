@@ -1,0 +1,22 @@
+[
+    { 
+        "date" : "2018-01-01",
+        "name" : "Dummy Operation",
+        "id" : 10,
+        "size" : 100
+        
+    },
+    { 
+        "date" : "2017-10-09",
+        "name" : "Smart Operation",
+        "id" : 99,
+        "size" : 9
+        
+    },
+    { 
+        "date" : "2017-11-30",
+        "name" : "OK Operation",
+        "id" : 105,
+        "size" : 2
+        
+    }]

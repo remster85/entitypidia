@@ -13,16 +13,16 @@ class Provider extends Component {
           
           var providers = [];
           for (var j = 0; j < data.length; j++){ 
-            providers.push(<tr><th>{data[j].provider}</th><th>{data[j].value}</th></tr>)
+            providers.push(<tr><td>{data[j].provider}</td><td>{data[j].value}</td></tr>)
           }
 
 
           return ( 
-                <div style={{ backgroundColor: 'green'}} >
+                <div>
                   <Table hover responsive>
                     <thead>
                       <tr>
-                        <th>Provider</th><th>Name</th></tr>
+                        <th>Name</th><th>Value</th></tr>
                     </thead>
                     <tbody>
                       {providers}

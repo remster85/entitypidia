@@ -12,11 +12,11 @@ class EntityComposition extends Component {
 
           var entitycomposition = [];
           for (var j = 0; j < data.length; j++){ 
-            entitycomposition.push(<tr><th>{data[j].property1}</th><th>{data[j].property2}</th><th>{data[j].property3}</th><th>{data[j].property4}</th><th>{data[j].property5}</th></tr>)
+            entitycomposition.push(<tr><td>{data[j].property1}</td><td>{data[j].property2}</td><td>{data[j].property3}</td><td>{data[j].property4}</td><td>{data[j].property5}</td></tr>)
           }
   
         return ( 
-            <div style={{ backgroundColor: 'pink'}} >
+            <div >
               <Table hover responsive>
                 <thead>
                   <tr>
