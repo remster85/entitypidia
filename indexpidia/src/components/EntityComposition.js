@@ -3,7 +3,7 @@ import {Table} from 'reactstrap';
 
 class EntityComposition extends Component {
 
-render() {
+  render() {
 
       if(this.props.entityname){
 
@@ -15,12 +15,12 @@ render() {
             entitycomposition.push(<tr><th>{data[j].property1}</th><th>{data[j].property2}</th><th>{data[j].property3}</th><th>{data[j].property4}</th><th>{data[j].property5}</th></tr>)
           }
   
-      return ( 
+        return ( 
             <div style={{ backgroundColor: 'pink'}} >
               <Table hover responsive>
                 <thead>
                   <tr>
-                    <th>Commodity</th><th>Contract</th><th>Price</th><th>Weight</th><th>DeltaFut</th></tr>
+                    <th>Property1</th><th>Property2</th><th>Property3</th><th>Property4</th><th>Property5</th><th>Property6</th><th>Property7</th><th>Property8</th></tr>
                 </thead>
                 <tbody>
                   {entitycomposition}

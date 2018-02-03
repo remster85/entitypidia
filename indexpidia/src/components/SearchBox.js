@@ -17,9 +17,8 @@ class SearchBox extends Component {
                     {options}
                 </datalist>
                 
-                <input 
-                type="submit" 
-                onClick={() => this.props.onClick(document.getElementById('entities').value)}/>
+                <button type="submit" onClick={() => this.props.onClick(document.getElementById('entities').value)}>
+                  Submit</button> 
             </div>
        )
     }

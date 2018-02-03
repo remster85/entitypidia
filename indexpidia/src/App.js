@@ -4,10 +4,14 @@ import SearchBox from './components/SearchBox.js';
 import Provider from './components/Provider.js';
 import HelloChart from './components/HelloChart.js';
 import MyLineChart from './components/MyLineChart.js';
+import UberChart from './components/UberChart.js';
 import EntityComposition from './components/EntityComposition.js';
 import {Form, FormControl, Button} from 'react-bootstrap';
 import { Container, Row, Col } from 'reactstrap';
 import {Bar} from 'react-chartjs';
+import PieChart from './components/PieChart.js';
+import LineExample from './components/LineExample.js'; 
+import PieChart1 from './components/PieChart1.js';
 
 class App extends Component {
     constructor() {
@@ -93,14 +97,17 @@ class App extends Component {
             <br/>
 
             <Row>
-             <Col xs="5">
-             <HelloChart  entityname={this.state.entityname}/>
+             <Col xs="5"><LineExample entityname={this.state.entityname}/>
+       {/* <PieChart entityname={this.state.entityname}/> */} 
             </Col>
 
-            <Col xl="5">
-            <MyLineChart  entityname={this.state.entityname}/>
+            <Col xl="5"><PieChart entityname={this.state.entityname}/>
+             {/*  <UberChart  entityname={this.state.entityname}/>*/} 
+           
             </Col>
             </Row>
+
+    
 
         
         </Container>
