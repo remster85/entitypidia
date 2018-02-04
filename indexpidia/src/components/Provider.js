@@ -19,7 +19,7 @@ class Provider extends Component {
 
           return ( 
                 <div>
-                  <Table hover responsive>
+                  <Table hover responsive striped> 
                     <thead>
                       <tr>
                         <th>Name</th><th>Value</th></tr>

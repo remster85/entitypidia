@@ -17,7 +17,7 @@ class EntityComposition extends Component {
   
         return ( 
             <div >
-              <Table hover responsive>
+              <Table hover responsive striped>
                 <thead>
                   <tr>
                     <th>Property1</th><th>Property2</th><th>Property3</th><th>Property4</th><th>Property5</th><th>Property6</th><th>Property7</th><th>Property8</th></tr>

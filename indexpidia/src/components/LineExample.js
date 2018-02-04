@@ -6,9 +6,7 @@ class LineExample extends Component {
 
  
   render() {
-    
-   
-
+  
     if(this.props.entityname){
 
       const entityname = this.props.entityname;
@@ -17,7 +15,7 @@ class LineExample extends Component {
       var values = Object.keys(values).map(function(k) { return values[k]['value'] });
 
       const data = {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'July'],
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         datasets: [
           {
             label: entityname,
@@ -45,7 +43,7 @@ class LineExample extends Component {
                 
       return (
         <div>
-          <h2>Line Example</h2>
+          <h2>{this.props.entityname} Level</h2>
           <Line data={data} />
         </div>
       ); }else{

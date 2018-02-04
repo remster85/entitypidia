@@ -13,7 +13,7 @@ class SearchBox extends Component {
             <div>
               
                 <input list="entities-datalist" type="text" id="entities"/>
-                <datalist id="entities-datalist">
+                <datalist id="entities-datalist" placeholder="entity1">
                     {options}
                 </datalist>
                 

@@ -9,8 +9,8 @@ export default class OperationsComponent extends React.Component {
     
   if(this.props.entityname){
 
-    const filename =  this.props.entityname + 'operations.json';
-    const data = require('./../jsonsamples/' + filename);
+    const file =  this.props.entityname + 'operations.json';
+    const data = require('./../jsonsamples/' + file);
 
       var entityoperations = [];
       for (var j = 0; j < data.length; j++){ 
@@ -19,7 +19,7 @@ export default class OperationsComponent extends React.Component {
 
 
     return (
-      <Table>
+      <Table striped>
         <thead>
           <tr>
             <th>Operation Id</th>

@@ -67,6 +67,7 @@ class App extends Component {
                         data={ this.state.data } 
                         searchKey="entity_name"
                         onClick={(idx) => this.searchEntity(idx)}
+                        
                     />
                 </Col>
 
@@ -81,7 +82,7 @@ class App extends Component {
                 </Col>
 
             </Row>
-            
+
         </Container>
 
       </div>

@@ -6,6 +6,7 @@ import EntityComposition from './EntityComposition.js';
 import PieChart from './PieChart.js';
 import LineExample from './LineExample.js'; 
 import OperationsComponent from './OperationsComponent.js'; 
+import EntityPerformanceComponent from './EntityPerformanceComponent.js'; 
 
 export default class EntityTabComponent extends React.Component {
   constructor(props) {
@@ -86,12 +87,8 @@ export default class EntityTabComponent extends React.Component {
               </Row>
 
               <Row>
-                <Col sm="6">
-                <LineExample  entityname={this.props.entityname} />
-                </Col>
-
-                <Col sm="4">
-                ...
+                <Col sm="8">
+                  <EntityPerformanceComponent  entityname={this.props.entityname} />
                 </Col>
 
               </Row>
