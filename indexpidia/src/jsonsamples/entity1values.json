@@ -22,4 +22,84 @@
         "entity" : "entity1",
         "value" : 17
         
-    }]
+    },
+    {
+
+    "date" : "2018-01-05",
+    "entity" : "entity1",
+    "value" : 17
+
+    },
+    {
+
+    "date" : "2018-01-06",
+    "entity" : "entity1",
+    "value" : 17
+
+    },
+    {
+
+    "date" : "2018-01-07",
+    "entity" : "entity1",
+    "value" : 17
+
+    },
+    {
+
+"date" : "2018-01-08",
+"entity" : "entity1",
+"value" : 17
+
+},
+{ 
+        "date" : "2018-01-09",
+        "entity" : "entity1",
+        "value" : 10
+        
+    },
+    { 
+        "date" : "2018-01-10",
+        "entity" : "entity1",
+        "value" : 10.5
+        
+    },
+    { 
+        "date" : "2018-01-11",
+        "entity" : "entity1",
+        "value" : 12
+        
+    },{
+
+        "date" : "2018-01-12",
+        "entity" : "entity1",
+        "value" : 17
+        
+    },
+    {
+
+    "date" : "2018-01-13",
+    "entity" : "entity1",
+    "value" : 17
+
+    },
+    {
+
+    "date" : "2018-01-14",
+    "entity" : "entity1",
+    "value" : 17
+
+    },
+    {
+
+    "date" : "2018-01-15",
+    "entity" : "entity1",
+    "value" : 17
+
+    },
+    {
+
+"date" : "2018-01-16",
+"entity" : "entity1",
+"value" : 17
+
+}]

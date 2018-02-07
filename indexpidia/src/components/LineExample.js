@@ -10,8 +10,7 @@ class LineExample extends Component {
     if(this.props.entityname){
 
       const entityname = this.props.entityname;
-      const filename =  this.props.entityname + 'values.json';
-      values = require('./../jsonsamples/' + filename);
+      var values = this.props.data;
       var values = Object.keys(values).map(function(k) { return values[k]['value'] });
 
       const data = {

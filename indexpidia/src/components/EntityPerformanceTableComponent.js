@@ -11,9 +11,7 @@ export default class EntityPerformanceTable extends React.Component {
   
     if(this.props.entityname){
 
-      const entityname = this.props.entityname;
-      const filename =  this.props.entityname + 'values.json';
-      var values = require('./../jsonsamples/' + filename);
+      var values = this.props.data;
   
       var entityperformance = [];
       for (var j = 0; j < values.length; j++){ 

@@ -12,51 +12,70 @@ export default class EntityPerformanceComponent extends React.Component {
   constructor() {
     super();
     this.state = {
-      nowdate: moment(),
-      fromdate: moment().subtract(4, "days")
+      todate: moment(),
+      fromdate: moment().subtract(4, "days"),
     };
+    this.handleStartDateChange = this.handleStartDateChange.bind(this);
+    this.handleToDateChange = this.handleToDateChange.bind(this);
+ 
   }
 
-  handleChange(){
-    console.log("handlechange");
+  loadData(entityname){
+    var fromdate = this.state.fromdate;
+    var todate = this.state.todate;
+    const filename = entityname + 'values.json';
+    var data = require('./../jsonsamples/' + filename);
+    return data;
+   
   }
 
-  handleSelect(){
-    console.log("handleselect");
+  handleStartDateChange(date){
+    this.setState({
+      fromdate: date
+    });
+
+    this.loadData(this.props.entityname);
+
   }
 
-  render() {
-  
+  handleToDateChange(date) {
+    this.setState({
+      todate: date
+    });
+
+    this.loadData(this.props.entityname);
+  }
+
+  render() {  
     if(this.props.entityname){
 
-    return (
+      var data = this.loadData(this.props.entityname);
+      console.log('rerender');
+      return (
+        <Container>
+        <Row>
+            <Col>
+              <div>
+                  Date From: 
+                  <DatePicker  selected={this.state.fromdate}
+                  onChange={this.handleStartDateChange} />
 
-      <Container>
-      <Row>
+                  To: 
+
+                  <DatePicker  selected={this.state.todate}
+                  onChange={this.handleToDateChange} />
+              </div>
+            </Col>
+        </Row>
+        <Row>
           <Col>
-            <div>
-                Date From: 
-                <DatePicker  selected={this.state.fromdate}
-                onSelect={this.handleSelect} 
-                onChange={this.handleChange} />
-
-                To: 
-
-                <DatePicker  selected={this.state.nowdate}
-                onSelect={this.handleSelect} 
-                onChange={this.handleChange} />
-            </div>
+                <LineExample  entityname={this.props.entityname} data={data} />
           </Col>
-      </Row>
-      <Row>
-        <Col>
-              <LineExample  entityname={this.props.entityname} />
-        </Col>
-        <Col>
-          <EntityPerformanceTableComponent  entityname={this.props.entityname} />
-        </Col> 
-      </Row>
-      </Container>
+          <Col>
+            <EntityPerformanceTableComponent  entityname={this.props.entityname} data={data}  />
+          </Col> 
+        </Row>
+        </Container>
      
       );
   }else{
