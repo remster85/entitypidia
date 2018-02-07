@@ -57,7 +57,7 @@ export default class EntityPerformanceComponent extends React.Component {
             <Col>
               <div>
                   Date From: 
-                  <DatePicker  selected={this.state.fromdate}
+                  <DatePicker   selected={this.state.fromdate}
                   onChange={this.handleStartDateChange} />
 
                   To: 

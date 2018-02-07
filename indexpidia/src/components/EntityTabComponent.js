@@ -1,7 +1,8 @@
 import React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import Provider from './Provider.js';
+import EntityTransco from './EntityTransco.js';
+import EntityInfos from './EntityInfos.js';
 import EntityComposition from './EntityComposition.js';
 import PieChart from './PieChart.js';
 import LineExample from './LineExample.js'; 
@@ -102,14 +103,14 @@ export default class EntityTabComponent extends React.Component {
                 <Col sm="4">
                   <Card body>
                     <CardTitle>General Info</CardTitle>
-                    <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                    <Button>Go somewhere</Button>
+                    <EntityInfos
+                      entityname={this.props.entityname}/>
                   </Card>
                 </Col>
                 <Col sm="4">
                   <Card body>
-                    <CardTitle>Providers</CardTitle>
-                    <Provider
+                    <CardTitle>Transcos</CardTitle>
+                    <EntityTransco
                       entityname={this.props.entityname}/>
                   </Card>
                 </Col>

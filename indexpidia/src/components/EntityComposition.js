@@ -1,7 +1,27 @@
 import React, { Component } from 'react';
 import {Table} from 'reactstrap';
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
 
 class EntityComposition extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      date: moment(),
+    };
+    this.handleDateChange = this.handleDateChange.bind(this);
+ 
+  }
+
+  handleDateChange(date){
+    this.setState({
+      date: date
+    });
+
+  }
+
+
 
   render() {
 
@@ -17,6 +37,11 @@ class EntityComposition extends Component {
   
         return ( 
             <div >
+
+                  Composition Date <DatePicker  selected={this.state.date}
+                  onChange={this.handleDateChange} />
+
+
               <Table hover responsive striped>
                 <thead>
                   <tr>

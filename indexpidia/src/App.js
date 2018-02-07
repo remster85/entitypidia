@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SearchBox from './components/SearchBox.js';
-import Provider from './components/Provider.js';
+import Transco from './components/EntityTransco.js';
 import HelloChart from './components/HelloChart.js';
 import MyLineChart from './components/MyLineChart.js';
 import UberChart from './components/UberChart.js';

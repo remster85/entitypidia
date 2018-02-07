@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import {Table} from 'reactstrap';
 
-class Provider extends Component {
+class EntityTransco extends Component {
 
     render() {
 
       if(this.props.entityname){
 
-          const filename =  this.props.entityname + 'provider.json';
+          const filename =  this.props.entityname + 'transco.json';
           const data = require('./../jsonsamples/' + filename);
 
           
-          var providers = [];
+          var trancos = [];
           for (var j = 0; j < data.length; j++){ 
-            providers.push(<tr><td>{data[j].provider}</td><td>{data[j].value}</td></tr>)
+            trancos.push(<tr><td>{data[j].transco}</td><td>{data[j].value}</td></tr>)
           }
 
 
@@ -25,7 +25,7 @@ class Provider extends Component {
                         <th>Name</th><th>Value</th></tr>
                     </thead>
                     <tbody>
-                      {providers}
+                      {trancos}
                     </tbody>
                   </Table>
                 </div>
@@ -39,4 +39,4 @@ class Provider extends Component {
     }
   }
 
-  export default Provider;
+  export default EntityTransco;

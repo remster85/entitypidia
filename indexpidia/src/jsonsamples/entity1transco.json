@@ -1,25 +1,25 @@
 [
         { 
             "entity" : "entity1",
-            "provider" : "PROV",
+            "transco" : "PROV",
             "value" : "val1"
             
         },
         { 
             "entity" : "entity1",
-            "provider" : "PROV2",
+            "transco" : "PROV2",
             "value" : "val2"
             
         },
         { 
             "entity" : "entity1",
-            "provider" : "PROV3",
+            "transco" : "PROV3",
             "value" : "val3"
             
         },{
 
             "entity" : "entity1",
-            "provider" : "PROV4",
+            "transco" : "PROV4",
             "value" : "val4"
             
         }]

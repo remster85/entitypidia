@@ -30,24 +30,6 @@ export default class OperationsComponent extends React.Component {
         </thead>
         <tbody>
           {entityoperations}
-          <tr>
-            <td scope="row">1</td>
-            <td>01/01/2018</td>
-            <td>OTTO</td>
-            <td>10.0</td>
-          </tr>
-          <tr>
-            <td scope="row">2</td>
-            <td>02/01/2018</td>
-            <td>OTTO</td>
-            <td>10.0</td>
-          </tr>
-          <tr>
-            <td scope="row">1</td>
-            <td>03/01/2018</td>
-            <td>OTTO</td>
-            <td>100.0</td>
-          </tr>
         </tbody>
       </Table>
     );
