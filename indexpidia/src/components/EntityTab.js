@@ -6,10 +6,10 @@ import EntityInfos from './EntityInfos.js';
 import EntityComposition from './EntityComposition.js';
 import PieChart from './PieChart.js';
 import LineExample from './LineExample.js'; 
-import OperationsComponent from './OperationsComponent.js'; 
-import EntityPerformanceComponent from './EntityPerformanceComponent.js'; 
+import Operations from './Operations.js'; 
+import EntityPerformance from './EntityPerformance.js'; 
 
-export default class EntityTabComponent extends React.Component {
+export default class EntityTab extends React.Component {
   constructor(props) {
     super(props);
 
@@ -89,7 +89,7 @@ export default class EntityTabComponent extends React.Component {
 
               <Row>
                 <Col sm="8">
-                  <EntityPerformanceComponent  entityname={this.props.entityname} />
+                  <EntityPerformance  entityname={this.props.entityname} />
                 </Col>
 
               </Row>
@@ -123,7 +123,7 @@ export default class EntityTabComponent extends React.Component {
 
               <Row>
                 <Col sm="6">
-                <OperationsComponent  entityname={this.props.entityname} />
+                <Operations entityname={this.props.entityname} />
                 </Col>
 
                 <Col sm="4">

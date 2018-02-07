@@ -2,12 +2,12 @@ import React from 'react';
 import { Table } from 'reactstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import EntityPerformanceTableComponent from './EntityPerformanceTableComponent.js'; 
+import EntityPerformanceTable from './EntityPerformanceTable.js'; 
 import LineExample from './LineExample.js'; 
 import { Container, Row, Col } from 'reactstrap';
 import moment from 'moment';
 
-export default class EntityPerformanceComponent extends React.Component {
+export default class EntityPerformance extends React.Component {
 
   constructor() {
     super();
@@ -72,7 +72,7 @@ export default class EntityPerformanceComponent extends React.Component {
                 <LineExample  entityname={this.props.entityname} data={data} />
           </Col>
           <Col>
-            <EntityPerformanceTableComponent  entityname={this.props.entityname} data={data}  />
+            <EntityPerformanceTable  entityname={this.props.entityname} data={data}  />
           </Col> 
         </Row>
         </Container>

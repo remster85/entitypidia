@@ -11,7 +11,7 @@ import { Container, Row, Col } from 'reactstrap';
 import {Bar} from 'react-chartjs';
 import PieChart from './components/PieChart.js';
 import LineExample from './components/LineExample.js'; 
-import EntityTabComponent from './components/EntityTabComponent.js';
+import EntityTab from './components/EntityTab.js';
 
 
 class App extends Component {
@@ -77,7 +77,7 @@ class App extends Component {
 
             <Row>
                 <Col>
-                    <EntityTabComponent entityname={this.state.entityname} />
+                    <EntityTab entityname={this.state.entityname} />
                  
                 </Col>
 
