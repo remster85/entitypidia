@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {Table} from 'reactstrap';
 
-class EntityTransco extends Component {
+export default class EntityOverview extends Component {
 
     render() {
 
       if(this.props.entityname){
 
-          const filename =  this.props.entityname + 'transco.json';
+          const filename = 'entitytransco.json';
           const data = require('./../jsonsamples/' + filename);
 
           
@@ -39,4 +39,3 @@ class EntityTransco extends Component {
     }
   }
 
-  export default EntityTransco;

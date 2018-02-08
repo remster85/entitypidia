@@ -3,7 +3,7 @@ import './App.css';
 import SearchBox from './components/SearchBox.js';
 import {Form, FormControl, Button} from 'react-bootstrap';
 import { Container, Row, Col } from 'reactstrap';
-import Composite from './components/Composite.js';
+import Body from './components/Body.js';
 import { Route, IndexRoute, Link } from 'react-router'
 
 
@@ -18,11 +18,9 @@ class Home extends Component {
 
 
   searchEntity(entityName){
-    console.log('search index ' + entityName); 
     this.setState( { entityname : entityName});   
  }
   
-
   render() {
 
     return (
@@ -52,7 +50,7 @@ class Home extends Component {
 
             <Row>
                 <Col>
-                    <Composite entityname={this.state.entityname} />
+                    <Body entityname={this.state.entityname} />
                 </Col>
 
             </Row>
@@ -63,7 +61,5 @@ class Home extends Component {
     );
   }
 }
-
-
 
 export default Home;

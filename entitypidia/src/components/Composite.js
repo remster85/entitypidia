@@ -1,7 +1,7 @@
 import React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import EntityTransco from './EntityTransco.js';
+import CompositeTransco from './CompositeTransco.js';
 import CompositeInfos from './CompositeInfos.js';
 import CompositeDetails from './CompositeDetails.js';
 import PieChart from './PieChart.js';
@@ -111,7 +111,7 @@ export default class EntityTab extends React.Component {
                 <Col sm="4">
                   <Card body>
                     <CardTitle>Transcos</CardTitle>
-                    <EntityTransco
+                    <CompositeTransco
                       entityname={this.props.entityname}/>
                   </Card>
                 </Col>
