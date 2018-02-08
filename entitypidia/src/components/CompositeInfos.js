@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Table} from 'reactstrap';
 
-class EntityInfos extends Component {
+class CompositeInfos extends Component {
 
     render() {
 
@@ -39,4 +39,4 @@ class EntityInfos extends Component {
     }
   }
 
-  export default EntityInfos;
+  export default CompositeInfos;

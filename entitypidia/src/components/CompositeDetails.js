@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import {Table} from 'reactstrap';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
+import { Link } from 'react-router-dom'
 
-class EntityComposition extends Component {
+class CompositeDetails extends Component {
 
   constructor() {
     super();
@@ -25,6 +26,12 @@ class EntityComposition extends Component {
 
   render() {
 
+    const About = () => (
+      <div>
+        <h2>About</h2>
+        </div>
+  )
+
       if(this.props.entityname){
 
         const filename =  this.props.entityname + 'composition.json';
@@ -38,6 +45,7 @@ class EntityComposition extends Component {
         return ( 
             <div >
 
+
                   Composition Date <DatePicker  selected={this.state.date}
                   onChange={this.handleDateChange} />
 
@@ -48,6 +56,7 @@ class EntityComposition extends Component {
                     <th>Property1</th><th>Property2</th><th>Property3</th><th>Property4</th><th>Property5</th><th>Property6</th><th>Property7</th><th>Property8</th></tr>
                 </thead>
                 <tbody>
+                  
                   {entitycomposition}
                 </tbody>
               </Table>
@@ -62,4 +71,4 @@ class EntityComposition extends Component {
     }
   }
 
-  export default EntityComposition;
+  export default CompositeDetails;

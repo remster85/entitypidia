@@ -2,12 +2,13 @@ import React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import EntityTransco from './EntityTransco.js';
-import EntityInfos from './EntityInfos.js';
-import EntityComposition from './EntityComposition.js';
+import CompositeInfos from './CompositeInfos.js';
+import CompositeDetails from './CompositeDetails.js';
 import PieChart from './PieChart.js';
 import LineExample from './LineExample.js'; 
 import Operations from './Operations.js'; 
-import EntityPerformance from './EntityPerformance.js'; 
+import CompositePerformance from './CompositePerformance.js'; 
+
 
 export default class EntityTab extends React.Component {
   constructor(props) {
@@ -37,7 +38,7 @@ export default class EntityTab extends React.Component {
                 className={classnames({ active: this.state.activeTab === '1' })}
                 onClick={() => { this.toggle('1'); }}
               >
-                Entity Composition
+                Composition
               </NavLink>
             </NavItem>
             <NavItem>
@@ -61,7 +62,7 @@ export default class EntityTab extends React.Component {
                 className={classnames({ active: this.state.activeTab === '4' })}
                 onClick={() => { this.toggle('4'); }}
               >
-                Deals
+                Operations
               </NavLink>
             </NavItem>
           </Nav>
@@ -73,7 +74,7 @@ export default class EntityTab extends React.Component {
 
               <Row>
                 <Col sm="8">
-                      <EntityComposition entityname={this.props.entityname}/>
+                      <CompositeDetails entityname={this.props.entityname}/>
                 </Col>
 
                 <Col sm="4">
@@ -89,7 +90,7 @@ export default class EntityTab extends React.Component {
 
               <Row>
                 <Col sm="8">
-                  <EntityPerformance  entityname={this.props.entityname} />
+                  <CompositePerformance  entityname={this.props.entityname} />
                 </Col>
 
               </Row>
@@ -103,7 +104,7 @@ export default class EntityTab extends React.Component {
                 <Col sm="4">
                   <Card body>
                     <CardTitle>General Info</CardTitle>
-                    <EntityInfos
+                    <CompositeInfos
                       entityname={this.props.entityname}/>
                   </Card>
                 </Col>
