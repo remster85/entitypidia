@@ -15,7 +15,7 @@ export default class CompositePerformanceTable extends React.Component {
   
       var entityperformance = [];
       for (var j = 0; j < values.length; j++){ 
-        entityperformance.push(<tr><td scope="row">{values[j].date}</td><td>{values[j].value}</td></tr>)
+        entityperformance.push(<tr key={j}><td scope="row">{values[j].date}</td><td>{values[j].value}</td></tr>)
       }
 
     return (

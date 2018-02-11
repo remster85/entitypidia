@@ -14,7 +14,7 @@ export default class OperationsComponent extends React.Component {
 
       var entityoperations = [];
       for (var j = 0; j < data.length; j++){ 
-        entityoperations.push(<tr><td scope="row">{data[j].id}</td><td>{data[j].date}</td><td>{data[j].name}</td><td>{data[j].size}</td></tr>)
+        entityoperations.push(<tr key={j}><td scope="row">{data[j].id}</td><td>{data[j].date}</td><td>{data[j].name}</td><td>{data[j].size}</td></tr>)
       }
 
 

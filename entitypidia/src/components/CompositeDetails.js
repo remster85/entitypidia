@@ -26,12 +26,6 @@ class CompositeDetails extends Component {
 
   render() {
 
-    const About = () => (
-      <div>
-        <h2>About</h2>
-        </div>
-  )
-
       if(this.props.entityname){
 
         const filename =  this.props.entityname + 'composition.json';
@@ -39,7 +33,7 @@ class CompositeDetails extends Component {
 
           var compositedetails = [];
           for (var j = 0; j < data.length; j++){ 
-            compositedetails.push(<tr><td>{data[j].property1}</td><td>{data[j].property2}</td><td>{data[j].property3}</td><td>{data[j].property4}</td><td>{data[j].property5}</td></tr>)
+            compositedetails.push(<tr key={j}><td>{data[j].property1}</td><td>{data[j].property2}</td><td>{data[j].property3}</td><td>{data[j].property4}</td><td>{data[j].property5}</td></tr>)
           }
   
         return ( 

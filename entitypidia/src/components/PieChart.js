@@ -19,7 +19,7 @@ export default class PieChart extends Component {
                 values.reduce(function (res, value) {
                     if (!res[value.property1]) {
                         res[value.property1] = {
-                            property5: 10,
+                            property5: 0,
                             property1: value.property1
                         };
                         groupedByCommos.push(res[value.property1])

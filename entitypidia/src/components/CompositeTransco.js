@@ -13,7 +13,7 @@ class CompositeTransco extends Component {
           
           var trancos = [];
           for (var j = 0; j < data.length; j++){ 
-            trancos.push(<tr><td>{data[j].transco}</td><td>{data[j].value}</td></tr>)
+            trancos.push(<tr key={j}><td>{data[j].transco}</td><td>{data[j].value}</td></tr>)
           }
 
 
