@@ -2,15 +2,15 @@ import React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import EntityTransco from './CompositeTransco.js';
-import CompositeInfos from './CompositeInfos.js';
-import CompositeDetails from './CompositeDetails.js';
+import EntityInfos from './EntityInfos.js';
+import EntityComposition from './EntityComposition.js';
 import PieChart from './PieChart.js';
 import LineExample from './LineExample.js'; 
 import Operations from './Operations.js'; 
-import CompositePerformance from './CompositePerformance.js'; 
+import EntityPerformance from './EntityPerformance.js'; 
 
 
-export default class Composite extends React.Component {
+export default class EntityTab extends React.Component {
   constructor(props) {
     super(props);
 
@@ -38,7 +38,7 @@ export default class Composite extends React.Component {
                 className={classnames({ active: this.state.activeTab === '1' })}
                 onClick={() => { this.toggle('1'); }}
               >
-                Composition
+                Entity Composition
               </NavLink>
             </NavItem>
             <NavItem>
@@ -62,7 +62,7 @@ export default class Composite extends React.Component {
                 className={classnames({ active: this.state.activeTab === '4' })}
                 onClick={() => { this.toggle('4'); }}
               >
-                Operations
+                Deals
               </NavLink>
             </NavItem>
           </Nav>
@@ -74,7 +74,7 @@ export default class Composite extends React.Component {
 
               <Row>
                 <Col sm="8">
-                      <CompositeDetails entityname={this.props.entityname}/>
+                      <EntityComposition entityname={this.props.entityname}/>
                 </Col>
 
                 <Col sm="4">
@@ -90,7 +90,7 @@ export default class Composite extends React.Component {
 
               <Row>
                 <Col sm="8">
-                  <CompositePerformance  entityname={this.props.entityname} />
+                  <EntityPerformance  entityname={this.props.entityname} />
                 </Col>
 
               </Row>
@@ -104,7 +104,7 @@ export default class Composite extends React.Component {
                 <Col sm="4">
                   <Card body>
                     <CardTitle>General Info</CardTitle>
-                    <CompositeInfos
+                    <EntityInfos
                       entityname={this.props.entityname}/>
                   </Card>
                 </Col>

@@ -37,14 +37,13 @@ class CompositeDetails extends Component {
         const filename =  this.props.entityname + 'composition.json';
         const data = require('./../jsonsamples/' + filename);
 
-          var entitycomposition = [];
+          var compositedetails = [];
           for (var j = 0; j < data.length; j++){ 
-            entitycomposition.push(<tr><td>{data[j].property1}</td><td>{data[j].property2}</td><td>{data[j].property3}</td><td>{data[j].property4}</td><td>{data[j].property5}</td></tr>)
+            compositedetails.push(<tr><td>{data[j].property1}</td><td>{data[j].property2}</td><td>{data[j].property3}</td><td>{data[j].property4}</td><td>{data[j].property5}</td></tr>)
           }
   
         return ( 
             <div >
-
 
                   Composition Date <DatePicker  selected={this.state.date}
                   onChange={this.handleDateChange} />
@@ -57,7 +56,7 @@ class CompositeDetails extends Component {
                 </thead>
                 <tbody>
                   
-                  {entitycomposition}
+                  {compositedetails}
                 </tbody>
               </Table>
             </div>

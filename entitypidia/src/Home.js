@@ -12,9 +12,15 @@ class Home extends Component {
         super();
         this.state = {
           data: [],
-          loading: false
+          loading: false,
+          entityName : 'entity'
         };
-      }
+        console.log('hi');
+        if(this.props){
+            console.log('hello');
+            console.log(this.props.params);
+        }  
+    }
 
 
   searchEntity(entityName){

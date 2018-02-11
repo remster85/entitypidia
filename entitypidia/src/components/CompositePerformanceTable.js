@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'reactstrap';
 
-export default class EntityPerformanceTable extends React.Component {
+export default class CompositePerformanceTable extends React.Component {
 
   handleChange(){
     console.log("handlechange");
